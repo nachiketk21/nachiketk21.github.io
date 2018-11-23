@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-23T14:58:16+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Nachiket Kshirsagar</title><subtitle>QA From a Green Planet</subtitle><entry><title type="html">Simple PGAdmin connection with ruby</title><link href="http://localhost:4000/PGAMIN-connect/" rel="alternate" type="text/html" title="Simple PGAdmin connection with ruby" /><published>2018-11-23T00:00:00+05:30</published><updated>2018-11-23T00:00:00+05:30</updated><id>http://localhost:4000/PGAMIN-connect</id><content type="html" xml:base="http://localhost:4000/PGAMIN-connect/">&lt;p&gt;After searching for a long time I found this simple 2 steps to connect to a postgres DB and hit a query and get the required data&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;conn = PGconn.connect(&quot;&amp;lt;&amp;lt;strong&amp;gt;URL&amp;lt;/strong&amp;gt;&amp;gt;&quot;,&quot;&amp;lt;strong&amp;gt;5432&amp;lt;/strong&amp;gt;&quot;,&quot;&quot;,&quot;&quot;,&quot;&amp;lt;&amp;lt;strong&amp;gt;Db&amp;lt;/strong&amp;gt; &amp;lt;strong&amp;gt;name&amp;lt;/strong&amp;gt;&amp;gt;&quot;,&quot;&amp;lt;&amp;lt;strong&amp;gt;username&amp;lt;/strong&amp;gt;&amp;gt;&quot;,&quot;&amp;lt;&amp;lt;strong&amp;gt;password&amp;lt;/strong&amp;gt;&amp;gt;&quot;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;res = conn.exec(&quot;select * from &amp;lt;table_name&amp;gt; where &amp;lt;column_name&amp;gt;='17141'&quot;)&lt;/code&gt;&lt;/p&gt;</content><author><name>Nachiket</name></author><summary type="html">After searching for a long time I found this simple 2 steps to connect to a postgres DB and hit a query and get the required data</summary></entry><entry><title type="html">Setting new profiles to FIREFOX</title><link href="http://localhost:4000/Firefox-profile/" rel="alternate" type="text/html" title="Setting new profiles to FIREFOX" /><published>2018-11-22T00:00:00+05:30</published><updated>2018-11-22T00:00:00+05:30</updated><id>http://localhost:4000/Firefox-profile</id><content type="html" xml:base="http://localhost:4000/Firefox-profile/">&lt;p&gt;During automation for a website we had to set a firebug and netexport profile to every new webdriver instance in firefox . We were using selenium webdriver with Ruby . There is a solution using java . We did it for ruby in following way&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Ruby&quot;&gt;    profile = Selenium::WebDriver::Firefox::Profile.new
+    profile.add_extension('./resources/firebug@software.joehewitt.com.xpi')
+    profile.add_extension('./resources/netexport@getfirebug.com.xpi')
+
+    profile['app.update.enabled'] = false
+    # Setting Firebug preferences
+    profile['extensions.firebug.currentVersion'] = '1.12.5'
+    profile['extensions.firebug.addonBarOpened'] = true
+    profile['extensions.firebug.console.enableSites'] = true
+    profile['extensions.firebug.script.einableSites'] = true
+    profile['extensions.firebug.net.enableSites'] = true
+    profile['extensions.firebug.previousPlacement'] = 1
+    profile['extensions.firebug.allPagesActivation'] = 'on'
+    profile['extensions.firebug.onByDefault'] = true
+    profile['extensions.firebug.defaultPanelName'] = 'net'
+    # Setting netExport preferences
+    profile['extensions.firebug.netexport.alwaysEnableAutoExport'] = true
+    profile['extensions.firebug.netexport.autoExportToFile'] = true
+    profile['extensions.firebug.netexport.Automation'] = true
+    profile['extensions.firebug.netexport.showPreview'] = false
+    path = File.join(File.join(Dir.pwd), '@file_name')
+    profile['extensions.firebug.netexport.defaultLogDir'] = path.gsub('/', '\\')
+    profile['update_preferences'] = true
+    $driver = Selenium::WebDriver.for(:firefox, profile: profile)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Create a resources folder at the root with following files in it which will install firebug and netexport from that folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please find two files (You can google it.)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;firebug@software.joehewitt.com.xpi&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;netexport@getfirebug.com.xpi&lt;/code&gt;&lt;/p&gt;</content><author><name>Nachiket</name></author><summary type="html">During automation for a website we had to set a firebug and netexport profile to every new webdriver instance in firefox . We were using selenium webdriver with Ruby . There is a solution using java . We did it for ruby in following way</summary></entry></feed>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Setting new profiles to FIREFOX – Nachiket Kshirsagar – QA From a Green Planet</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="During automation for a website we had to set a firebug and netexport profile to every new webdriver instance in firefox . We were using selenium webdriver with Ruby . There is a solution using java . We did it for ruby in following way
+
+" />
+    <meta property="og:description" content="During automation for a website we had to set a firebug and netexport profile to every new webdriver instance in firefox . We were using selenium webdriver with Ruby . There is a solution using java . We did it for ruby in following way
+
+" />
+    
+    <meta name="author" content="Nachiket Kshirsagar" />
+
+    
+    <meta property="og:title" content="Setting new profiles to FIREFOX" />
+    <meta property="twitter:title" content="Setting new profiles to FIREFOX" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="Nachiket Kshirsagar - QA From a Green Planet" href="/feed.xml" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+    
+    
+    <div class="intro-header">    
+      <div class="container">
+        <div class="post-heading">
+            <h1>Setting new profiles to FIREFOX</h1>
+            <span class="meta">Posted by <a href="/about"> Nachiket
+            </a> on November 22, 2018
+            <a href="/"> { Return to Blog }</a>
+            </span>
+        </div>
+            
+      </div>
+    </div>
+    
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+ <div class="space-extra-small">
+ </div>
+
+  <div class="entry">
+    <p>During automation for a website we had to set a firebug and netexport profile to every new webdriver instance in firefox . We were using selenium webdriver with Ruby . There is a solution using java . We did it for ruby in following way</p>
+
+<pre><code class="language-Ruby">    profile = Selenium::WebDriver::Firefox::Profile.new
+    profile.add_extension('./resources/firebug@software.joehewitt.com.xpi')
+    profile.add_extension('./resources/netexport@getfirebug.com.xpi')
+
+    profile['app.update.enabled'] = false
+    # Setting Firebug preferences
+    profile['extensions.firebug.currentVersion'] = '1.12.5'
+    profile['extensions.firebug.addonBarOpened'] = true
+    profile['extensions.firebug.console.enableSites'] = true
+    profile['extensions.firebug.script.einableSites'] = true
+    profile['extensions.firebug.net.enableSites'] = true
+    profile['extensions.firebug.previousPlacement'] = 1
+    profile['extensions.firebug.allPagesActivation'] = 'on'
+    profile['extensions.firebug.onByDefault'] = true
+    profile['extensions.firebug.defaultPanelName'] = 'net'
+    # Setting netExport preferences
+    profile['extensions.firebug.netexport.alwaysEnableAutoExport'] = true
+    profile['extensions.firebug.netexport.autoExportToFile'] = true
+    profile['extensions.firebug.netexport.Automation'] = true
+    profile['extensions.firebug.netexport.showPreview'] = false
+    path = File.join(File.join(Dir.pwd), '@file_name')
+    profile['extensions.firebug.netexport.defaultLogDir'] = path.gsub('/', '\\')
+    profile['update_preferences'] = true
+    $driver = Selenium::WebDriver.for(:firefox, profile: profile)
+</code></pre>
+
+<p>Create a resources folder at the root with following files in it which will install firebug and netexport from that folder.</p>
+
+<p><strong>Please find two files (You can google it.)</strong></p>
+
+<p><code class="highlighter-rouge">firebug@software.joehewitt.com.xpi</code></p>
+
+<p><code class="highlighter-rouge">netexport@getfirebug.com.xpi</code></p>
+
+  </div>
+
+  
+</article>
+
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+            <div class="svg-icon">
+          
+<a href="mailto:nachiketk21@gmail.com"><i class="icon-envelope icon-2x"></i></a>
+
+
+<a href="https://github.com/nachiketk21"><i class="icon-github icon-2x"></i></a>
+<a href="https://instagram.com/nachiketk21"><i class="icon-instagram icon-2x"></i></a>
+<a href="https://www.linkedin.com/in/nachiket-kshirsagar"><i class="icon-linkedin-sign icon-2x"></i></a>
+<a href="https://www.pinterest.com/nachiketk21"><i class="icon-pinterest icon-2x"></i></a>
+
+<a href="https://www.twitter.com/nachiketk21"><i class="icon-twitter icon-2x"></i></a>
+<a href="http://stackoverflow.com/users/2400756/the-rookie"><i class="icon-stackexchange icon-2x"></i></a>
+
+
+
+            </div>
+        </footer>
+      </div>
+    </div>
+
+
+    
+
+  </body>
+</html>

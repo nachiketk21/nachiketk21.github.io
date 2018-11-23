@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple PGAdmin connection with ruby – Nachiket Kshirsagar – QA From a Green Planet</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="After searching for a long time I found this simple 2 steps to connect to a postgres DB and hit a query and get the required data
+
+" />
+    <meta property="og:description" content="After searching for a long time I found this simple 2 steps to connect to a postgres DB and hit a query and get the required data
+
+" />
+    
+    <meta name="author" content="Nachiket Kshirsagar" />
+
+    
+    <meta property="og:title" content="Simple PGAdmin connection with ruby" />
+    <meta property="twitter:title" content="Simple PGAdmin connection with ruby" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml" title="Nachiket Kshirsagar - QA From a Green Planet" href="/feed.xml" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+    
+    
+    <div class="intro-header">    
+      <div class="container">
+        <div class="post-heading">
+            <h1>Simple PGAdmin connection with ruby</h1>
+            <span class="meta">Posted by <a href="/about"> Nachiket
+            </a> on November 23, 2018
+            <a href="/"> { Return to Blog }</a>
+            </span>
+        </div>
+            
+      </div>
+    </div>
+    
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+ <div class="space-extra-small">
+ </div>
+
+  <div class="entry">
+    <p>After searching for a long time I found this simple 2 steps to connect to a postgres DB and hit a query and get the required data</p>
+
+<p><code class="highlighter-rouge">conn = PGconn.connect("&lt;&lt;strong&gt;URL&lt;/strong&gt;&gt;","&lt;strong&gt;5432&lt;/strong&gt;","","","&lt;&lt;strong&gt;Db&lt;/strong&gt; &lt;strong&gt;name&lt;/strong&gt;&gt;","&lt;&lt;strong&gt;username&lt;/strong&gt;&gt;","&lt;&lt;strong&gt;password&lt;/strong&gt;&gt;")</code></p>
+
+<p><code class="highlighter-rouge">res = conn.exec("select * from &lt;table_name&gt; where &lt;column_name&gt;='17141'")</code></p>
+
+  </div>
+
+  
+</article>
+
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+            <div class="svg-icon">
+          
+<a href="mailto:nachiketk21@gmail.com"><i class="icon-envelope icon-2x"></i></a>
+
+
+<a href="https://github.com/nachiketk21"><i class="icon-github icon-2x"></i></a>
+<a href="https://instagram.com/nachiketk21"><i class="icon-instagram icon-2x"></i></a>
+<a href="https://www.linkedin.com/in/nachiket-kshirsagar"><i class="icon-linkedin-sign icon-2x"></i></a>
+<a href="https://www.pinterest.com/nachiketk21"><i class="icon-pinterest icon-2x"></i></a>
+
+<a href="https://www.twitter.com/nachiketk21"><i class="icon-twitter icon-2x"></i></a>
+<a href="http://stackoverflow.com/users/2400756/the-rookie"><i class="icon-stackexchange icon-2x"></i></a>
+
+
+
+            </div>
+        </footer>
+      </div>
+    </div>
+
+
+    
+
+  </body>
+</html>
