@@ -27,29 +27,29 @@ also make changes to product for a better experience.
 
 ## Experience
 
-* **QA Lead** (Oct 2016 - present) _2yrs 2mos_
+* **QA Lead** at **ZINRELO** (Oct 2016 - present) _-_
 
   Working as a QA lead managing all the testing processes and developing a class
   leading product in loyalty.
 
-* **SDET** (Mar 2016 - Oct 2016) _8 mos_
+* **SDET** at **GROFERS** (Mar 2016 - Oct 2016) _8 mos_
 
    Creating a automation framework for a merchant signup and admin console from
    where a merchant could track his orders and inventory.
 
-* **Quality Analyst** (Oct 2015 - Feb 2016) _5 mos_
+* **Quality Analyst** at **hem.com** (Oct 2015 - Feb 2016) _5 mos_
 
    * Responsible for testing supply chain management.
    * Helping with building automation framework and write automation scripts and
      maintaining them.
    * Writing test cases and manually testing UI and mobile websites.
 
-* **Senior software engineer - QA** (May 2013 - Oct 2015) _2yrs 6 mos_
+* **Senior software engineer - QA** at **VERTIS INFOTECH** (May 2013 - Oct 2015) _2yrs 6 mos_
 
     Manually testing new features for client, writing test cases ,executing
     them ,automating them using Selenium WebDriver and Ruby.
 
-* **Test Engineer** (Aug 2012 - Apr 2013) _9 mos_
+* **Test Engineer** at **GLOBALSTEP** (Aug 2012 - Apr 2013) _9 mos_
 
      Game testing and Game Analyst.
 
