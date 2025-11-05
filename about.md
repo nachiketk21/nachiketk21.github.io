@@ -14,7 +14,18 @@ My approach to these challenges has consistently involved building robust teams 
 
 ## Experience
 
-* **Senior QA Manager** at **ZINRELO** (Oct 2016 - present) _-_
+* **Manager, QA** at **DOMO** (Feb 2024 - present)
+
+	 Team Building and Leadership: Established and scaled the QA organization from the ground up, successfully growing a high-performing team to support multiple product lines. Fostered a collaborative environment focused on quality excellence and continuous improvement.
+
+	 Cross-Functional QA Management: Oversee quality assurance operations across multiple product teams, ensuring consistent testing standards and best practices throughout the organization. Coordinate testing efforts across different product domains to maintain cohesive quality metrics.
+
+	 Modern Automation Framework: Spearheaded the implementation of modern test automation using Playwright and Python, establishing scalable and maintainable testing infrastructure. Designed automation architecture to support end-to-end testing across multiple product features.
+
+	 QA Process Development: Pioneered the establishment of comprehensive QA processes and workflows from inception. Defined quality standards, testing methodologies, and release criteria aligned with business objectives and product roadmaps.
+
+
+* **Senior QA Manager** at **ZINRELO** (Oct 2016 - Jan 2024) _7 yrs 4 mos_
 
 	 Automation Framework Development: Built and implemented automation frameworks, significantly improving product efficiency and quality.
 	 Utilized Python and Selenium for framework implementation.
