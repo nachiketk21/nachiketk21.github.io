@@ -8,9 +8,9 @@ permalink: /about/
 
 ## Summary
 
-I possess extensive experience of 11+ years in the design and implementation of automation frameworks, having successfully contributed to a wide range of projects, particularly within startup environments. My work has been instrumental in solving complex issues related to delivery, loyalty programs, and enterprise solutions.
+With over 14 years of experience in QA, I excel in creating robust automation frameworks and managing high-performing teams. My expertise spans AI-enabled processes, team building, and quality assurance practices across diverse domains. I am committed to enhancing product quality and user experience, while also bridging the gap between academic learning and professional QA methodologies.
 
-My approach to these challenges has consistently involved building robust teams capable of delivering high-quality products. I have also taken a proactive role in defining and establishing effective QA practices and workflows, as well as recommending QA policies that not only enhance product quality but also drive meaningful improvements to the overall user experience.
+I have been an early and extensive adopter of AI-driven development workflows, including Claude Code CLI, embedding them into engineering processes to accelerate automation script creation and elevate team productivity. This hands-on experience with AI tooling gives me a unique edge in building modern, efficient QA organizations.
 
 ## Education
 
