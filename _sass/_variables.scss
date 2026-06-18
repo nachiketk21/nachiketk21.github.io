@@ -48,3 +48,14 @@ $georgia: Georgia, serif;
     @content;
   }
 }
+
+// ---- Resume page design tokens ----
+$r-font:          'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+$r-text-primary:  #1a202c;
+$r-text-secondary:#4a5568;
+$r-text-muted:    #718096;
+$r-bg-alt:        #f8f9fc;
+$r-border:        #e2e8f0;
+$r-accent:        #8476ad;
+$r-accent-light:  #ede9f5;
+$r-section-num:   #d4c5f0;
